@@ -1,3 +1,14 @@
+#navBar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #add8e6;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #ffa500;
+  border-radius: 3px;
+}
+
 body {
     font-family: Calibri;
     color: #999999;
