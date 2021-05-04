@@ -33,6 +33,12 @@ h1 {
 }
 
 
+p a:visited {
+    color: rgb(221, 83, 240);
+}
+p a:link {
+    color:rgb(157, 195, 245);
+}
 
 /* navigation bar */
 #nav {
