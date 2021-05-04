@@ -20,6 +20,7 @@ p {
     margin-right: 10%;
     margin-top: 0px;
     padding: 20px;
+    padding-top: 50px;
 }
 
 h1 {
@@ -32,13 +33,11 @@ h1 {
     margin-right: auto;
 }
 
-
+/* color links */
 p a:visited {
-    color: rgb(221, 83, 240);
-}
+    color: rgb(221, 83, 240)}
 p a:link {
-    color:rgb(157, 195, 245);
-}
+    color:rgb(157, 195, 245)}
 
 /* navigation bar */
 #nav {
