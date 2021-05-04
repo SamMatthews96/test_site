@@ -1,59 +1,72 @@
 body {
     font-family: Calibri;
     color: #ccc;
-    background-color: #444444;
+    margin: 0px;
+
+    background-image: url('cats.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    border-style: solid;
-    border-radius: 5px;
-    }
-
-li {
-    float: left;
+p {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-li a {
-    color: white;
-    display: block;
-    text-align: center;
-    padding: 12px 18px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111;
+.content {
+    background-color: #444444cc;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0px;
+    padding: 20px;
 }
 
 h1 {
     text-align: center;
 }
 
-p {
-    margin-left: 10%;
-    margin-right: 10%
-}
-
-button {
-    padding: 5px;
-    margin: 2px;
-    background-color: #444;
-    color: #ccc
-}
-
-#buttons {
-    display: flex;
-    justify-content: center;
-}
-
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
 
+
+
+/* navigation bar */
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-style: solid;
+    border-radius: 10px;
+    position: fixed;
+    left: 5px;
+    top: 5px;
+}
+#nav li {
+    float: left;
+}
+li a {
+    color: #ccc;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding: 12px 28px;
+    text-decoration: none;
+    
+}
+li a:hover {
+    background-color: #111;
+}
+
+.background {
+    width: 50%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
 }
