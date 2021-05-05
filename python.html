@@ -12,54 +12,76 @@
     </ul>
 
     <div class="content">
+
         <p>This page showcases a number of my personal favourite python projects I have completed. 
-            They are made using the pygame library and are mostly games or puzzles I made for 
-            DigiLocal. I havent't found a way of making them play within a browser, so I'll
+        They are made using the pygame library and are mostly games or puzzles I made for 
+        DigiLocal. I haven't found a way of making them play within a browser, so I'll
         provide links to repl.it </p>
+        
+        <ul id="selection">
+            <li class="tabs" onclick="showContent(0)">Untangle</li>
+            <li class="tabs" onclick="showContent(1)">Connect4</li>
+            <li class="tabs" onclick="showContent(2)">Mastermind</li>
+        </ul>
 
-        <h1>Uncrossing</h1>
-        <p>A puzzle game where a planar network is generated, and the position of the nodes 
-            randomized so that the edges of the network are crossing. The objective is the 
-            drag the nodes to uncross the edges, hence the name. Once all lines are uncrossed, 
-            pressing space will generate a harder puzzle.</p>
-        <img src="uncrossing.PNG" class="center">
+        <div class="project">
+            <p>This game generates a random planar network with a certain number of nodes 
+                and randomises their position. The objective is to click and drag the nodes 
+                until none of the edges are crossed. 
+            </p>
+            <p>Once a puzzle is completed, press <i><b>space</b></i> to start a harder puzzle</p>
+            <img src="uncrossing.PNG" class="center">
+        </div>
 
-        <h1>Connect4</h1>
-        <p>Same rules as connect 4. To make a play press 1-7 and a coloured disk will appear 
+        <div class="project">
+            
+            <p>Same rules as connect 4. To make a play press 1-7 and a coloured disk will appear 
             in the corresponding column.</p>
-        <img src="uncrossing.png" class="center">
+            <img src="uncrossing.png" class="center">
+        </div>
 
-        <h1>Mastermind</h1>
-        <p>Based on a board game. Upon starting the game the computer will generate 4 randomly 
-            coloured circles in a particular order, which are hidden from the user. The objective 
-            is to figure out what the colour and position of the circles is. To make a guess, click 
-            on a circle on the top unfilled row and press a number from 1-6. Each number corresponds 
-            to a colour as indicated by the key on the right side of the window. Once a row has been 
-            filled you can submit your guess. The game will give feedback indicating how close your 
-            guess is by displaying a number of black and white dots at the end of the row. Each 
-            black dot indicates that a circle was of the correct colour and in the correct position. 
-            Each white dot indicates that a circle was of the correct colour and in the wrong position. 
-            The user has 10 guesses before they lose. Upon winning or losing the game will display 
+        <div class="project">
+            
+            <p>Based on a board game. Upon starting the game the computer will generate 4 randomly 
+                coloured circles in a particular order, which are hidden from the user. The objective 
+                is to figure out what the colour and position of the circles is. To make a guess, click 
+                on a circle on the top unfilled row and press a number from 1-6. Each number corresponds 
+                to a colour as indicated by the key on the right side of the window. Once a row has been 
+                filled you can submit your guess. The game will give feedback indicating how close your 
+                guess is by displaying a number of black and white dots at the end of the row. Each 
+                black dot indicates that a circle was of the correct colour and in the correct position. 
+                Each white dot indicates that a circle was of the correct colour and in the wrong position. 
+                The user has 10 guesses before they lose. Upon winning or losing the game will display 
             the correct solution.</p>
-        <img src="uncrossing.png" class="center">
-
+            <img src="uncrossing.png" class="center">
+        </div>
+<!--
         <h1>Roguelike</h1>
         <p>Work in progress. This project was an attempt to try and create line of sight in a 2d game. 
             The program creates an environment made of walls and floors. Walls block the users line of 
             sight, but moving around the game space (with WASD) will reveal the map. Performance is 
-            currently lacking and there are a number of improvements that can be made..</p>
+        currently lacking and there are a number of improvements that can be made..</p>
         <img src="uncrossing.png" class="center">
 
         <h1>Sudoku Solver</h1>
         <p>Solves Sudoku puzzles up to those that are rated "hard". Clicking on a square will select 
             it, and entering a number from 1-9 will enter that value into the square. Each time the 
-            user input a number the program will eliminate redundant candidates to solve the puzzle.</p>
+        user input a number the program will eliminate redundant candidates to solve the puzzle.</p>
         <img src="uncrossing.png" class="center">
     </div>
-
+-->
 </body>
 
 <script>
+    function showContent(x) {
+        var projects = document.getElementsByClassName("project");
+        var i;
+        for (i = 0; i < projects.length; i++) {
+            projects[i].style.display = "none"};
+        projects[x].style.display = "block";
+    };
+
     
+
 </script>
 </html>
