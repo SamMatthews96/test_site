@@ -19,8 +19,7 @@ p {
     padding: 20px;
     padding-top: 50px;
     overflow: auto;}
-h1 {
-    text-align: center;}
+h1 {text-align: center}
 .center {
     display: block;
     margin-left: auto;
@@ -31,11 +30,12 @@ h1 {
 
 .sideImg {
     margin-top: 20px;
-    max-width: 80%;
-    height: auto;
+    width: 60%;
+    
     display: block;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 /* color links */
@@ -90,6 +90,25 @@ p a:link {
     padding: 12px 28px;
     text-decoration: none;}
 
-.project {
-    display: none;}
+.project {display: none}
+.projectHeader {
+    overflow: auto}
 
+button {
+    margin-top: 21px;
+    font-size: 30px;
+    text-decoration: none;
+}
+button:visited {
+    text-decoration: none;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.floatContainer {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    height: 200px;
+}
