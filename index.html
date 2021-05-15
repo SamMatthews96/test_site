@@ -6,56 +6,88 @@
 </head>
 
 <body>
-    <ul id="nav"> 
-        <li><a href="index.html">Home</a></li>
-        <li><a href="python.html">Python</a></li>
-        <li><a href="volunteering.html">Volunteering</a></li>
-    </ul>
-
-
-    <div class="content">
-        <h1>About Me</h1>
-        <p>Hello, my name is Sam Matthews. 
-            I want to pursue a career in software development because I enjoy solving 
-            problems and I gain satisfaction from creating things that other people can use and 
-            benefit from. Since September 2019 I have been developing my code abilities, primarily
-            in Python, and I created this page to showcase what I've learned.
-        </p>
-
-        
-
-
-        
-        <h1>Work in Progress</h1>
-        <h3>To Do</h3>
-        <ol>
-            <li>Reorganise information to improve readability</li>
-            <li>The content on the volunteering page appears wrong when the width of the page is low</li>
-            <li>Finish Python Project descriptions</li>
-        </ol>
-        <h3>Wishlist</h3>
-        <ol>
-            <li>Different themes</li>
-            <li>Different displays for phones</li>
-        </ol>
-        <h1>Changelog (temp)</h1>
-        <h2>05-05-21</h2>
-        <ul>
-            <li>Added the volunteering page</li>
-            <li>Added the changelog</li>
-            <li>Added some more Python projects</li>
-            <li>Changed the layout of Python projects page</li>
-            <li>Added some python project images</li>
+    <div id="menu">
+        <ul id="nav">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="#volunteering">Volunteering</a></li>
+            <li><a href="#pythonProjects">Python Projects</a></li>
         </ul>
     </div>
 
-    
+    <div class="content">
+        <h1 class="centerText">Sam Matthews</h1>
+        <h2 class="centerText">Aspiring Software Developer, Dark Theme Enthusiast</h2>
 
+        <h1 class="banner">About Me</h1>
+            <p>Hello, I'm Sam. I'm looking to pursue a career in software development, because I'm a problem solver and I gain satisfaction from creating things that other people can use. I've already started this with my voluntary work.</p>
+
+            <p style="color:red">(Talk about where I see myself in x years) develop skills and be a valuable team member people look to for help/guidance </p>
+
+        <h1 class="banner" id="volunteering">Volunteering</h1>
+            <img src="DigiLocal.jpg" class="volunteerImage">
+            <div>
+                <h2 class="centerText">DigiLocal - Digital Ambassador</h2>
+                <h3 class="centerText">September 2019 to Present</h3>
+                <p>Assisting young people at weekly coding clubs </p>
+                <ul>
+                    <li>Providing tuition, supervision and support</li>
+                    <li>Assisting with problem solving and debugging code</li>
+                    <li>Creating project guides for the children to use</li>
+                    <li>Provided support at the NASA Space Apps Challenge 2019</li>
+                    <li>Assisting with online clubs since COVID</li>
+                </ul>
+            </div>
+            <img src="LeonardCheshire.jpg" class="volunteerImage">
+            <div>
+                <h2 class="centerText">Leonard Cheshire - Digital Champion</h2>
+                <h3 class="centerText">September 2019 to November 2019</h3>
+                <p>Introducing and educating people with disabilities in the use of basic 
+                    IT to enhance their daily experience</p>
+                <ul>
+                    <li>Teaching clients how to use a mouse, keyboard and touchscreen</li>
+                    <li>Safe use of the internet including email and online shopping</li>
+                </ul>
+            </div>
+        
+        <h1 class="banner" id="pythonProjects">Python Projects</h1>
+            <img src="tetris.PNG" class="projectImage">
+            <img src="mastermind.PNG" class="projectImage">
+            <img src="sudoku.PNG" class="projectImage">
+        
+        
+        
+        <h1>Work in Progress</h1>
+            <h3>To Do</h3>
+            <ol>
+                <li>Add all content to main page</li>
+            </ol>
+            <h3>Wishlist</h3>
+            <ol>
+                <li>Different themes</li>
+                <li>Slick animations for mouseovers, shortcuts, etc</li>
+                <li>Different displays for phones</li>
+            </ol>
+        <h1>Changelog (temp)</h1>
+            <h2>13-05-21</h2>
+            <ul>
+                <li>Began reworking the websites theme and putting content on one page, 
+                    with the navigation bar instead moving to the different sections on
+                    the page.
+                </li>
+            </ul>
+            <h2>05-05-21</h2>
+            <ul>
+                <li>Added the volunteering page</li>
+                <li>Added the changelog</li>
+                <li>Added some more Python projects</li>
+                <li>Changed the layout of Python projects page</li>
+                <li>Added some python project images</li>
+            </ul>
+
+    </div>
 </body>
 
 <script>
-    function jokeAlert() {
-    alert("You're looking at it!")
-    }
+
 </script>
 </html>
