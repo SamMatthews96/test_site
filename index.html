@@ -2,10 +2,12 @@
 <html>
 <head>
     <link rel="stylesheet" href="stylesheet.css">
-    <title>Home</title>
+    <title>Sam Matthews</title>
 </head>
 
 <body>
+
+    <!-- Navigation Menu -->
     <div id="menu">
         <ul id="nav">
             <li><a href="#aboutMe">About Me</a></li>
@@ -22,69 +24,126 @@
 
         <!-- About Me -->
         <h1 class="banner" id="aboutMe">About Me</h1>
-            <p>Hello, I'm Sam. I'm looking to pursue a career in software development because I'm a problem solver and I gain fulfilment from creating things that other people can use. I've already started this with my voluntary work, detailed below</p>
-
-            <p style="color:red">(where I see myself in x years) I want to develop skills and be a valuable team member people look to for help/guidance </p>
+        <p>I enjoy solving problems and creating things that other people can benefit from. </p>
+        <p style="color:red">I am definitely a well rounded person who has experienced many different things and has lots of interests and stuff</p>
 
         <!-- Volunteering -->
         <h1 class="banner" id="volunteering">Volunteering</h1>
 
-            <img src="DigiLocal.jpg" class="volunteerImage">
-            <div>
-                <h2 class="centerText"><a href="https://digilocal.org.uk/">DigiLocal</a> - Digital Ambassador</h2>
-                <h3 class="centerText">September 2019 to Present</h3>
-                <p>Assisting young people at weekly coding clubs </p>
-                <ul>
-                    <li>Providing tuition, supervision and support</li>
-                    <li>Assisting with problem solving and debugging code</li>
-                    <li>Creating project guides for the children to use</li>
-                    <li>Provided support at the NASA Space Apps Challenge 2019</li>
-                    <li>Assisting with online clubs since COVID</li>
-                </ul>
-            </div>
+        <img src="DigiLocal.jpg" class="volunteerImage">
+        <div>
+            <h2 class="centerText"><a href="https://digilocal.org.uk/">DigiLocal</a> - Digital Ambassador</h2>
+            <h3 class="centerText">September 2019 to Present</h3>
+            <p>Assisting young people at weekly coding clubs </p>
+            <ul>
+                <li>Providing tuition, supervision and support</li>
+                <li>Assisting with problem solving and debugging code</li>
+                <li>Designing project guides for the children to use</li>
+                <li>Provided support at the NASA Space Apps Challenge 2019</li>
+                <li>Assisting with online clubs since COVID</li>
+            </ul>
+        </div>
 
-            <img src="LeonardCheshire.jpg" class="volunteerImage">
-            <div>
-                <h2 class="centerText"><a href="https://www.leonardcheshire.org/">Leonard Cheshire</a> - Digital Champion</h2>
-                <h3 class="centerText">September 2019 to November 2019</h3>
-                <p>Introducing and educating people with disabilities in the use of basic 
-                    IT to enhance their daily experience</p>
-                <ul>
-                    <li>Teaching clients how to use a mouse, keyboard and touchscreen</li>
-                    <li>Safe use of the internet including email and online shopping</li>
-                </ul>
-                <br><br>
-            </div>
+        <img src="LeonardCheshire.jpg" class="volunteerImage">
+        <div>
+            <h2 class="centerText"><a href="https://www.leonardcheshire.org/">Leonard Cheshire</a> - Digital Champion</h2>
+            <h3 class="centerText">September 2019 to November 2019</h3>
+            <p>Introducing and educating people with disabilities in the use of basic 
+                IT to enhance their daily experience</p>
+            <ul>
+                <li>Teaching clients how to use a mouse, keyboard and touchscreen</li>
+                <li>Safe use of the internet including email and online shopping</li>
+            </ul>
+            <br><br>
+        </div>
         
         <!-- Python Projects -->
         <h1 class="banner" id="pythonProjects">Python Projects</h1>
-            <img src="tetris.PNG" class="projectImage">
-            <img src="mastermind.PNG" class="projectImage">
-            <img src="sudoku.PNG" class="projectImage">
-            <img src="uncrossing.PNG" class="projectImage">
-            <img src="connect4.PNG" class="projectImage">
+        <p>For the past 18 months I've been teaching myself Python. Here are some of the projects I've completed both as I've been learning to code and as contributions for DigiLocal</p>
+        
+        <div>
+            <div class="projectImageContainer"
+            onmouseover="showProjectImageText(0)" onmouseout="hideProjectImageText(0)">
+                <img src="tetris.PNG" class="projectImage">
+                <div class="projectImageText">Tetris</div>
+            </div>
+            <div class="projectImageContainer"
+            onmouseover="showProjectImageText(1)" onmouseout="hideProjectImageText(1)">
+                <img src="mastermind.PNG" class="projectImage">
+                <div class="projectImageText">Mastermind</div>
+            </div>
+
+            <div class="projectImageContainer"
+            onmouseover="showProjectImageText(2)" onmouseout="hideProjectImageText(2)">
+                <img src="sudoku.PNG" class="projectImage">
+                <div class="projectImageText">Sudoku Solver</div>
+            </div>
             
+            <div class="projectImageContainer"
+            onmouseover="showProjectImageText(3)" onmouseout="hideProjectImageText(3)">
+                <img src="uncrossing.PNG" class="projectImage">
+                <div class="projectImageText">Untangle</div>
+            </div>
+            
+            <div class="projectImageContainer"
+            onmouseover="showProjectImageText(4)" onmouseout="hideProjectImageText(4)">
+                <img src="connect4.PNG" class="projectImage">
+                <div class="projectImageText">Connect4</div>
+            </div>
+
+            <div class="projectImageContainer"
+            onmouseover="showProjectImageText(5)" onmouseout="hideProjectImageText(5)">
+                <img src="Cube.PNG" class="projectImage">
+                <div class="projectImageText">Cube</div>
+            </div>
+
+            <div class="projectImageContainer"
+            onmouseover="showProjectImageText(6)" onmouseout="hideProjectImageText(6)">
+                <img src="Dominate.PNG" class="projectImage">
+                <div class="projectImageText">Domination</div>
+            </div>
+
+            <div class="projectImageContainer"
+            onmouseover="showProjectImageText(7)" onmouseout="hideProjectImageText(7)">
+                <img src="LineOfSight.PNG" class="projectImage">
+                <div class="projectImageText">Line of Sight</div>
+            </div>
+        </div>
+        <p style ="color:red">This is a temporary paragraph. It needs to be here otherwise things break.</p>
+        <p style ="color:red">I don't know how to fix it.</p>
         
         <!-- Education -->
         <h1 class="banner" id="education">Education</h1>
-        <p style="color:red">I did uni</p>
-        <p style="color:red">and A levels</p>
-        <p style="color:red">and GCSEs</p>
+        <h2>University of Southampton (2015 - 2019)</h2>
+        <p>Diploma of Higher Education in Mathematics</p>
+        <h2>A-level (2013 - 2015)</h2>
+        <ul>
+            <li>Maths - A*</li>
+            <li>Further Maths - A</li>
+            <li>Computing - C</li>
+        </ul>
+        <h2>GCSE (2011 - 2013)</h2>
+        <p>8 GCSE's A* - C, including A* in Maths and C in English</p>
             
+        <!-- Work in Progress -->
         <h1 id="wip" class="banner">Work in Progress</h1>
             <h3>To Do</h3>
             <ol>
-                <li>Perfect python project presentation: current idea is for each python project to be represented by an image of the project. Upon mouseover the name of the project will show, and turn the cursor into a finger pointer. Clicking the project will open a window describing the project</li>
-                <li>Some of the projects aren't user friendly, might amend them to make it clear to the user how they are played since I'll be including links to them</li>
-                <li>Crop pictures so that they are square</li>
+                <li>Clicking a python project should open a window describing the project</li>
             </ol>
             <h3>Wishlist</h3>
             <ol>
-                <li>Different themes</li>
                 <li>Slick animations for mouseovers, shortcuts, etc</li>
+                <li>Different themes</li>
                 <li>Different displays for phones</li>
             </ol>
         <h1>Changelog (temp)</h1>
+            <h2>21-05-21</h2>
+            <ul>
+                <li>Education Section now has content</li>
+                <li>Changed the Python images, and added more of them</li>
+                <li>The names of the projects appear when you mouseover them</li>
+            </ul>
             <h2>14-05-21</h2>
             <ul>
                 <li>Added to about me</li>
@@ -113,6 +172,18 @@
 </body>
 
 <script>
+
+var projectImages = document.getElementsByClassName("projectImageContainer");
+var projectImageTexts = document.getElementsByClassName("projectImageText");
+
+function showProjectImageText(x) {
+    var text = projectImageTexts[x];
+    text.style.display = "initial";
+};
+function hideProjectImageText(x) {
+    var text = projectImageTexts[x];
+    text.style.display = "none";
+};
 
 </script>
 </html>
