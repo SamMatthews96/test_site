@@ -6,6 +6,91 @@
 </head>
 
 <body>
+    <!-- Project Descriptions -->
+    <div>
+        <div class="pythonProjectDescription" onclick="togglePythonProjectDescription(0)"><!-- Tetris -->
+            <h1 class="pythonProjectDescriptionHeading">Tetris</h1>
+            <img src="tetrisFull.PNG" class="pythonProjectDescriptionImage">
+            <p>Probably the most popular project I made for DigiLocal. It plays like classic Tetris: accumulate as high a score as possible by filling rows with blocks that fall from the ceiling. Press the left and right arrow keys to control the horizontal movement of the falling block, up to rotate it and down fall faster. As your score increases so too does the speed of the game.</p>
+            <p>Play/View Code</p>
+        </div>
+
+        <div class="pythonProjectDescription" onclick="togglePythonProjectDescription(1)"><!-- Mastermind -->
+            <h1 class="pythonProjectDescriptionHeading">Mastermind</h1>
+            <img src="mastermindFull.PNG" class="pythonProjectDescriptionImage">
+            
+            <p>The objective is to guess the colour and position of four randomly generated coloured circles. To make a guess click a circle on the top unfilled row and press <b>1-6</b>. Each number corresponds to a colour as indicated by the key on the right side of the window. <b>0</b> clears the selected circle.</p>
+            
+            <p>Once a row has been filled you can press <b>space</b> to make your guess. The game will indicate how close your guess is at the end of the row. </p>
+            <ul>
+                <li>Each black dot indicates that a circle was of 
+                    the correct colour and in the correct position.</li>
+                <li>Each white dot indicates that a circle was of the correct colour and in the wrong position. </li>
+            </ul>
+            <p>You have 10 attempts to guess the correct colours. Upon winning or losing the game will display the correct solution.</p>
+            <p>Play/View Code</p>
+        </div>
+
+        <div class="pythonProjectDescription" onclick="togglePythonProjectDescription(2)"><!-- Sudoku -->
+            <h1 class="pythonProjectDescriptionHeading">Sudoku Solver</h1>
+            <img src="mastermindFull.PNG" class="pythonProjectDescriptionImage">
+            
+            <p>Solves Sudoku puzzles up to those that are rated "hard". Clicking on a square will select 
+                it, and entering a number from 1-9 will enter that value into the square. Each time the 
+            user input a number the program will eliminate redundant candidates to solve the puzzle.</p>
+            <p>Play/View Code</p>
+        </div>
+
+        <div class="pythonProjectDescription" onclick="togglePythonProjectDescription(3)"><!-- Untangle -->
+            <h1 class="pythonProjectDescriptionHeading">Untangle</h1>
+            <img src="mastermindFull.PNG" class="pythonProjectDescriptionImage">
+            
+            <p>This game generates a random planar network with a certain number of nodes 
+                and randomises their position. The objective is to click and drag the nodes 
+                until none of the edges are crossed.</p>
+                <p>Once a puzzle is completed, press <b>space</b> to progress to a harder puzzle.</p>
+            <p>Play/View Code</p>
+        </div>
+
+        <div class="pythonProjectDescription" onclick="togglePythonProjectDescription(4)"><!-- Connect4 -->
+            <h1 class="pythonProjectDescriptionHeading">Connect4</h1>
+            <img src="mastermindFull.PNG" class="pythonProjectDescriptionImage">
+            
+            <p>Same rules as connect 4, get a four-in-a-row either horizontally, vertically or 
+                diagonally to win. To make a play press 1-7 and a coloured disk will appear 
+                in the corresponding column.</p>
+            <p>This is a two player game so it may not be too compelling if played by yourself.</p>
+        
+            <p>Play/View Code</p>
+        </div>
+
+        <div class="pythonProjectDescription" onclick="togglePythonProjectDescription(5)"><!-- Cube -->
+            <h1 class="pythonProjectDescriptionHeading">Cube</h1>
+            <img src="mastermindFull.PNG" class="pythonProjectDescriptionImage">
+            
+            <p>cubic</p>
+            <p>Play/View Code</p>
+        </div>
+
+        <div class="pythonProjectDescription" onclick="togglePythonProjectDescription(6)"><!-- Domination -->
+            <h1 class="pythonProjectDescriptionHeading">Domination</h1>
+            <img src="mastermindFull.PNG" class="pythonProjectDescriptionImage">
+            
+            <p>conquest</p>
+            <p>Play/View Code</p>
+        </div>
+    
+        <div class="pythonProjectDescription" onclick="togglePythonProjectDescription(7)"><!-- Line of Sight -->
+            <h1 class="pythonProjectDescriptionHeading">Line of Sight</h1>
+            <img src="mastermindFull.PNG" class="pythonProjectDescriptionImage">
+            
+            <p>Work in progress. This project was an attempt to try and create line of sight in a 2d game. 
+                The program creates an environment made of walls and floors. Walls block the users line of 
+                sight, but moving around the game space (with WASD) will reveal the map. Performance is 
+            currently lacking and there are a number of improvements that can be made..</p>
+            <p>Play/View Code</p>
+        </div>
+    </div>
 
     <!-- Navigation Menu -->
     <div id="menu">
@@ -19,117 +104,126 @@
     </div>
 
     <div class="content">
-        <h1 class="centerText">Sam Matthews</h1>
-        <h2 class="centerText">Aspiring Software Developer, Dark Theme Enthusiast</h2>
-
+        <!-- Intro -->
+        <div>
+            <h1 class="centerText">Sam Matthews</h1>
+            <h2 class="centerText">Aspiring Software Developer</h2>
+            <h2 class="centerText">Dark Theme Enthusiast</h2>
+        </div>
         <!-- About Me -->
-        <h1 class="banner" id="aboutMe">About Me</h1>
-        <p>I enjoy solving problems and creating things that other people can benefit from. </p>
-        <p style="color:red">I am definitely a well rounded person who has experienced many different things and has lots of interests and stuff</p>
-
+        <div>
+            <h1 class="banner" id="aboutMe">About Me</h1>
+            <p>I enjoy solving problems and creating things that other people can benefit from. </p>
+            <p style="color:red">I am definitely a well rounded person who has experienced many different things and has lots of interests and stuff</p>
+        </div>
         <!-- Volunteering -->
-        <h1 class="banner" id="volunteering">Volunteering</h1>
-
-        <img src="DigiLocal.jpg" class="volunteerImage">
         <div>
-            <h2 class="centerText"><a href="https://digilocal.org.uk/">DigiLocal</a> - Digital Ambassador</h2>
-            <h3 class="centerText">September 2019 to Present</h3>
-            <p>Assisting young people at weekly coding clubs </p>
-            <ul>
-                <li>Providing tuition, supervision and support</li>
-                <li>Assisting with problem solving and debugging code</li>
-                <li>Designing project guides for the children to use</li>
-                <li>Provided support at the NASA Space Apps Challenge 2019</li>
-                <li>Assisting with online clubs since COVID</li>
-            </ul>
-        </div>
+            <h1 class="banner" id="volunteering">Volunteering</h1>
 
-        <img src="LeonardCheshire.jpg" class="volunteerImage">
-        <div>
-            <h2 class="centerText"><a href="https://www.leonardcheshire.org/">Leonard Cheshire</a> - Digital Champion</h2>
-            <h3 class="centerText">September 2019 to November 2019</h3>
-            <p>Introducing and educating people with disabilities in the use of basic 
-                IT to enhance their daily experience</p>
-            <ul>
-                <li>Teaching clients how to use a mouse, keyboard and touchscreen</li>
-                <li>Safe use of the internet including email and online shopping</li>
-            </ul>
-            <br><br>
+            <img src="DigiLocal.jpg" class="volunteerImage">
+            <div>
+                <h2 class="centerText"><a href="https://digilocal.org.uk/">DigiLocal</a> - Digital Ambassador</h2>
+                <h3 class="centerText">September 2019 to Present</h3>
+                <p>Assisting young people at weekly coding clubs </p>
+                <ul>
+                    <li>Providing tuition, supervision and support</li>
+                    <li>Assisting with problem solving and debugging code</li>
+                    <li>Designing project guides for the children to use</li>
+                    <li>Provided support at the NASA Space Apps Challenge 2019</li>
+                    <li>Assisting with online clubs since COVID</li>
+                </ul>
+            </div>
+
+            <img src="LeonardCheshire.jpg" class="volunteerImage">
+            <div>
+                <h2 class="centerText"><a href="https://www.leonardcheshire.org/">Leonard Cheshire</a> - Digital Champion</h2>
+                <h3 class="centerText">September 2019 to November 2019</h3>
+                <p>Introducing and educating people with disabilities in the use of basic 
+                    IT to enhance their daily experience</p>
+                <ul>
+                    <li>Teaching clients how to use a mouse, keyboard and touchscreen</li>
+                    <li>Safe use of the internet including email and online shopping</li>
+                </ul>
+                <br><br>
+            </div>
         </div>
-        
         <!-- Python Projects -->
-        <h1 class="banner" id="pythonProjects">Python Projects</h1>
-        <p>For the past 18 months I've been teaching myself Python. Here are some of the projects I've completed both as I've been learning to code and as contributions for DigiLocal</p>
-        
         <div>
-            <div class="projectImageContainer"
-            onmouseover="showProjectImageText(0)" onmouseout="hideProjectImageText(0)">
-                <img src="tetris.PNG" class="projectImage">
-                <div class="projectImageText">Tetris</div>
-            </div>
-            <div class="projectImageContainer"
-            onmouseover="showProjectImageText(1)" onmouseout="hideProjectImageText(1)">
-                <img src="mastermind.PNG" class="projectImage">
-                <div class="projectImageText">Mastermind</div>
-            </div>
-
-            <div class="projectImageContainer"
-            onmouseover="showProjectImageText(2)" onmouseout="hideProjectImageText(2)">
-                <img src="sudoku.PNG" class="projectImage">
-                <div class="projectImageText">Sudoku Solver</div>
-            </div>
+            <h1 class="banner" id="pythonProjects">Python Projects</h1>
+            <p>For the past 18 months I've been teaching myself Python. Here are some of the projects I've completed both as I've been learning to code and as contributions for DigiLocal</p>
+            <p>Click on each image for more information about each project</p>
             
-            <div class="projectImageContainer"
-            onmouseover="showProjectImageText(3)" onmouseout="hideProjectImageText(3)">
-                <img src="uncrossing.PNG" class="projectImage">
-                <div class="projectImageText">Untangle</div>
-            </div>
-            
-            <div class="projectImageContainer"
-            onmouseover="showProjectImageText(4)" onmouseout="hideProjectImageText(4)">
-                <img src="Connect4.PNG" class="projectImage">
-                <div class="projectImageText">Connect4</div>
-            </div>
+            <div id="pythonProjectsContainer">
+                <div class="projectImageContainer"
+                onmouseover="toggleProjectImageText(0)" onmouseout="toggleProjectImageText(0)"
+                onclick="togglePythonProjectDescription(0)">
+                    <img src="tetris.PNG" class="projectImage">
+                    <div class="projectImageText">Tetris</div>
+                </div>
 
-            <div class="projectImageContainer"
-            onmouseover="showProjectImageText(5)" onmouseout="hideProjectImageText(5)">
-                <img src="Cube.PNG" class="projectImage">
-                <div class="projectImageText">Cube</div>
-            </div>
+                <div class="projectImageContainer"
+                onmouseover="toggleProjectImageText(1)" onmouseout="toggleProjectImageText(1)" onclick="togglePythonProjectDescription(1)">
+                    <img src="mastermind.PNG" class="projectImage">
+                    <div class="projectImageText">Mastermind</div>
+                </div>
 
-            <div class="projectImageContainer"
-            onmouseover="showProjectImageText(6)" onmouseout="hideProjectImageText(6)">
-                <img src="Dominate.PNG" class="projectImage">
-                <div class="projectImageText">Domination</div>
-            </div>
+                <div class="projectImageContainer"
+                onmouseover="toggleProjectImageText(2)" onmouseout="toggleProjectImageText(2)" onclick="togglePythonProjectDescription(2)">
+                    <img src="sudoku.PNG" class="projectImage">
+                    <div class="projectImageText">Sudoku Solver</div>
+                </div>
+                
+                <div class="projectImageContainer"
+                onmouseover="toggleProjectImageText(3)" onmouseout="toggleProjectImageText(3)" onclick="togglePythonProjectDescription(3)">
+                    <img src="uncrossing.PNG" class="projectImage">
+                    <div class="projectImageText">Untangle</div>
+                </div>
+                
+                <div class="projectImageContainer"
+                onmouseover="toggleProjectImageText(4)" onmouseout="toggleProjectImageText(4)" onclick="togglePythonProjectDescription(4)">
+                    <img src="connect4.PNG" class="projectImage">
+                    <div class="projectImageText">Connect4</div>
+                </div>
 
-            <div class="projectImageContainer"
-            onmouseover="showProjectImageText(7)" onmouseout="hideProjectImageText(7)">
-                <img src="LineOfSight.PNG" class="projectImage">
-                <div class="projectImageText">Line of Sight</div>
+                <div class="projectImageContainer"
+                onmouseover="toggleProjectImageText(5)" onmouseout="toggleProjectImageText(5)" onclick="togglePythonProjectDescription(5)">
+                    <img src="Cube.PNG" class="projectImage">
+                    <div class="projectImageText">Cube</div>
+                </div>
+
+                <div class="projectImageContainer"
+                onmouseover="toggleProjectImageText(6)" onmouseout="toggleProjectImageText(6)" onclick="togglePythonProjectDescription(6)">
+                    <img src="Dominate.PNG" class="projectImage">
+                    <div class="projectImageText">Domination</div>
+                </div>
+
+                <div class="projectImageContainer"
+                onmouseover="toggleProjectImageText(7)" onmouseout="toggleProjectImageText(7)" onclick="togglePythonProjectDescription(7)">
+                    <img src="LineOfSight.PNG" class="projectImage">
+                    <div class="projectImageText">Line of Sight</div>
+                </div>
             </div>
         </div>
-        <p style ="color:red">This is a temporary paragraph. It needs to be here otherwise things break.</p>
-        <p style ="color:red">I don't know how to fix it.</p>
-        
         <!-- Education -->
-        <h1 class="banner" id="education">Education</h1>
-        <h2>University of Southampton (2015 - 2019)</h2>
-        <p>Diploma of Higher Education in Mathematics</p>
-        <h2>A-level (2013 - 2015)</h2>
-        <ul>
-            <li>Maths - A*</li>
-            <li>Further Maths - A</li>
-            <li>Computing - C</li>
-        </ul>
-        <h2>GCSE (2011 - 2013)</h2>
-        <p>8 GCSE's A* - C, including A* in Maths and C in English</p>
-            
+        <div>
+            <h1 class="banner" id="education">Education</h1>
+            <h2>University of Southampton (2015 - 2019)</h2>
+            <p>Diploma of Higher Education in Mathematics</p>
+            <h2>A-level (2013 - 2015)</h2>
+            <ul>
+                <li>Maths - A*</li>
+                <li>Further Maths - A</li>
+                <li>Computing - C</li>
+            </ul>
+            <h2>GCSE (2011 - 2013)</h2>
+            <p>8 GCSE's A* - C, including A* in Maths and C in English</p>
+        </div>
         <!-- Work in Progress -->
+        <div>
         <h1 id="wip" class="banner">Work in Progress</h1>
             <h3>To Do</h3>
             <ol>
-                <li>Clicking a python project should open a window describing the project</li>
+                <li>Finish python project descriptions, include a link to a working version of each project</li>
             </ol>
             <h3>Wishlist</h3>
             <ol>
@@ -138,6 +232,10 @@
                 <li>Different displays for phones</li>
             </ol>
         <h1>Changelog (temp)</h1>
+            <h2>22-05-21</h2>
+            <ul>
+                <li>Clicking a python project image now brings up a description</li>
+            </ul>
             <h2>21-05-21</h2>
             <ul>
                 <li>Education Section now has content</li>
@@ -167,23 +265,34 @@
                 <li>Changed the layout of Python projects page</li>
                 <li>Added some python project images</li>
             </ul>
-
+        </div>
     </div>
 </body>
 
 <script>
 
-var projectImages = document.getElementsByClassName("projectImageContainer");
 var projectImageTexts = document.getElementsByClassName("projectImageText");
+var projectDescriptions = document.getElementsByClassName("pythonProjectDescription");
 
-function showProjectImageText(x) {
+function toggleProjectImageText(x) {
     var text = projectImageTexts[x];
-    text.style.display = "initial";
-};
-function hideProjectImageText(x) {
-    var text = projectImageTexts[x];
-    text.style.display = "none";
-};
+    toggleElementsDisplay(text);};
+function togglePythonProjectDescription(x) {
+    var description = projectDescriptions[x];
+    toggleElementsDisplay(description);};
+
+function toggleElementsDisplay(element) {
+    if (element.style.display == "initial") {
+        hideElementsDisplay(element);
+    } else {
+        showElementsDisplay(element);}}
+function showElementsDisplay(element) {
+    element.style.display = "initial";};
+function hideElementsDisplay(element) {
+    element.style.display = "none";};
+
+
 
 </script>
+
 </html>
