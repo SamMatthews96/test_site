@@ -8,17 +8,19 @@
 <body>
     <!-- Project Descriptions -->
     <div>
-        <div class="pythonProjectDescription" onclick="togglePythonProjectDescription(0)"><!-- Tetris -->
+        <div class="pythonProjectDescription" onclick="hidePythonProjectDescription(0)"><!-- Tetris -->
             <h1 class="pythonProjectDescriptionHeading">Tetris</h1>
             <img src="tetrisFull.PNG" class="pythonProjectDescriptionImage">
-            <p>Probably the most popular project I made for DigiLocal. It plays like classic Tetris: accumulate as high a score as possible by filling rows with blocks that fall from the ceiling. Press the left and right arrow keys to control the horizontal movement of the falling block, up to rotate it and down fall faster. As your score increases so too does the speed of the game.</p>
-            <p>Play/View Code</p>
+            <h2 class="centerText"><a href="https://replit.com/@SamMat/tetris">Play/View Code</a></h2>
+            <p>A fan favourite of my DigiLocal games. It plays like classic Tetris: accumulate as high a score as possible by filling rows with blocks that fall from the ceiling. </p>
+            <p>Press the <b>left</b> and <b>right</b> arrow keys to control the horizontal movement of the falling block, <b>up</b> to rotate it and <b>down</b> fall faster. As your score increases so too does the speed of the game.</p>
+            
         </div>
 
-        <div class="pythonProjectDescription" onclick="togglePythonProjectDescription(1)"><!-- Mastermind -->
+        <div class="pythonProjectDescription" onclick="hidePythonProjectDescription(1)"><!-- Mastermind -->
             <h1 class="pythonProjectDescriptionHeading">Mastermind</h1>
             <img src="mastermindFull.PNG" class="pythonProjectDescriptionImage">
-            
+            <h2 class="centerText"><a href="https://replit.com/@SamMat/Mastermind">Play/View Code</a></h2>
             <p>The objective is to guess the colour and position of four randomly generated coloured circles. To make a guess click a circle on the top unfilled row and press <b>1-6</b>. Each number corresponds to a colour as indicated by the key on the right side of the window. <b>0</b> clears the selected circle.</p>
             
             <p>Once a row has been filled you can press <b>space</b> to make your guess. The game will indicate how close your guess is at the end of the row. </p>
@@ -28,68 +30,66 @@
                 <li>Each white dot indicates that a circle was of the correct colour and in the wrong position. </li>
             </ul>
             <p>You have 10 attempts to guess the correct colours. Upon winning or losing the game will display the correct solution.</p>
-            <p>Play/View Code</p>
+            
         </div>
 
-        <div class="pythonProjectDescription" onclick="togglePythonProjectDescription(2)"><!-- Sudoku -->
+        <div class="pythonProjectDescription" onclick="hidePythonProjectDescription(2)"><!-- Sudoku -->
             <h1 class="pythonProjectDescriptionHeading">Sudoku Solver</h1>
             <img src="mastermindFull.PNG" class="pythonProjectDescriptionImage">
-            
+            <h2 class="centerText"><a href="https://replit.com/@SamMat/sudoku_solver">Play/View Code</a></h2>
             <p>Solves Sudoku puzzles up to those that are rated "hard". Clicking on a square will select 
                 it, and entering a number from 1-9 will enter that value into the square. Each time the 
             user input a number the program will eliminate redundant candidates to solve the puzzle.</p>
-            <p>Play/View Code</p>
-        </div>
+            
+        </div><!-- image + description + link + finish the project -->
 
-        <div class="pythonProjectDescription" onclick="togglePythonProjectDescription(3)"><!-- Untangle -->
+        <div class="pythonProjectDescription" onclick="hidePythonProjectDescription(3)"><!-- Untangle -->
             <h1 class="pythonProjectDescriptionHeading">Untangle</h1>
-            <img src="mastermindFull.PNG" class="pythonProjectDescriptionImage">
+            <img src="uncrossing.PNG" class="pythonProjectDescriptionImage">
+            <h2 class="centerText"><a href="https://replit.com/@SamMat/Untangle">Play/View Code</a></h2>
+            <p>The objective of Untangle is to click and drag the nodes of a network until none of the edges are crossed. </p>
+            <p>Once a puzzle is completed, press <b>space</b> to progress to a harder puzzle.</p>
             
-            <p>This game generates a random planar network with a certain number of nodes 
-                and randomises their position. The objective is to click and drag the nodes 
-                until none of the edges are crossed.</p>
-                <p>Once a puzzle is completed, press <b>space</b> to progress to a harder puzzle.</p>
-            <p>Play/View Code</p>
         </div>
 
-        <div class="pythonProjectDescription" onclick="togglePythonProjectDescription(4)"><!-- Connect4 -->
+        <div class="pythonProjectDescription" onclick="hidePythonProjectDescription(4)"><!-- Connect4 -->
             <h1 class="pythonProjectDescriptionHeading">Connect4</h1>
-            <img src="mastermindFull.PNG" class="pythonProjectDescriptionImage">
-            
-            <p>Same rules as connect 4, get a four-in-a-row either horizontally, vertically or 
-                diagonally to win. To make a play press 1-7 and a coloured disk will appear 
-                in the corresponding column.</p>
+            <img src="connect4Full.PNG" class="pythonProjectDescriptionImage">
+            <h2 class="centerText"><a href="https://replit.com/@SamMat/Connect4">Play/View Code</a></h2>
+            <p>Another DigiLocal favourite, get a four-in-a-row either horizontally, vertically or 
+                diagonally to win.</p>
+            <p>To make a play press <b>1-7</b> and a coloured disk will appear in the corresponding column.</p>
             <p>This is a two player game so it may not be too compelling if played by yourself.</p>
-        
-            <p>Play/View Code</p>
         </div>
 
-        <div class="pythonProjectDescription" onclick="togglePythonProjectDescription(5)"><!-- Cube -->
+        <div class="pythonProjectDescription" onclick="hidePythonProjectDescription(5)"><!-- Cube -->
             <h1 class="pythonProjectDescriptionHeading">Cube</h1>
-            <img src="mastermindFull.PNG" class="pythonProjectDescriptionImage">
-            
-            <p>cubic</p>
-            <p>Play/View Code</p>
-        </div>
+            <img src="Cube.PNG" class="pythonProjectDescriptionImage">
+            <h2 class="centerText"><a>Play/View Code</a></h2>
+            <p>Cube was a challenge I set myself when I was very much new to Python. I wanted to see if I could display a 3D object on a screen from scratch using only the 2D tools in Pygame. I was successful, but there are currently two issues:</p>
+            <ul>
+                <li>If two polygons were to clip through eachother, one of the polygons would be drawn over the other</li>
+                <li>An object that is behind the camera will appear on screen</li>
+            </ul>
+        </div><!-- need link -->
 
-        <div class="pythonProjectDescription" onclick="togglePythonProjectDescription(6)"><!-- Domination -->
+        <div class="pythonProjectDescription" onclick="hidePythonProjectDescription(6)"><!-- Domination -->
             <h1 class="pythonProjectDescriptionHeading">Domination</h1>
-            <img src="mastermindFull.PNG" class="pythonProjectDescriptionImage">
-            
-            <p>conquest</p>
-            <p>Play/View Code</p>
-        </div>
+            <img src="Dominate.PNG" class="pythonProjectDescriptionImage">
+            <h2 class="centerText"><a>Play/View Code</a></h2>
+            <p>The first project I ever made for DigiLocal, the objective is to dominate the board by sending waves until they have all been conquered.</p>
+            <p>You are the red player. Click red square to select it, and press <b>1</b> while holding the mouse over another square to send a wave to try and capture/reinforce it.</p>
+        </div><!-- need link -->
     
-        <div class="pythonProjectDescription" onclick="togglePythonProjectDescription(7)"><!-- Line of Sight -->
+        <div class="pythonProjectDescription" onclick="hidePythonProjectDescription(7)"><!-- Line of Sight -->
             <h1 class="pythonProjectDescriptionHeading">Line of Sight</h1>
             <img src="mastermindFull.PNG" class="pythonProjectDescriptionImage">
+            <h2 class="centerText"><a>Play/View Code</a></h2>
+            <p>Like Cube, Line of Sight was more a challenge I set myself rather than than something I intended to be a complete game. I wanted to see if I could create a line of sight in a 2D space.</p>
+            <p>I was successful, so I set myself a follow-up challenge: to have line of sight in a 2D space, but to have the program remember what the player character has already seen.</p>
+            <p>I was successful again, albeit at the expense of performance. Taking a look at the code reveals a number of improvements I could make should I get the chance.</p>
             
-            <p>Work in progress. This project was an attempt to try and create line of sight in a 2d game. 
-                The program creates an environment made of walls and floors. Walls block the users line of 
-                sight, but moving around the game space (with WASD) will reveal the map. Performance is 
-            currently lacking and there are a number of improvements that can be made..</p>
-            <p>Play/View Code</p>
-        </div>
+        </div><!-- need image + link -->
     </div>
 
     <!-- Navigation Menu -->
@@ -154,51 +154,42 @@
             <p>Click on each image for more information about each project</p>
             
             <div id="pythonProjectsContainer">
-                <div class="projectImageContainer"
-                onmouseover="toggleProjectImageText(0)" onmouseout="toggleProjectImageText(0)"
-                onclick="togglePythonProjectDescription(0)">
+                <div class="projectImageContainer" onmouseover="toggleProjectImageText(0)" onmouseout="toggleProjectImageText(0)" onclick="showPythonProjectDescription(0)">
                     <img src="tetris.PNG" class="projectImage">
                     <div class="projectImageText">Tetris</div>
                 </div>
 
-                <div class="projectImageContainer"
-                onmouseover="toggleProjectImageText(1)" onmouseout="toggleProjectImageText(1)" onclick="togglePythonProjectDescription(1)">
+                <div class="projectImageContainer" onmouseover="toggleProjectImageText(1)" onmouseout="toggleProjectImageText(1)" onclick="showPythonProjectDescription(1)">
                     <img src="mastermind.PNG" class="projectImage">
                     <div class="projectImageText">Mastermind</div>
                 </div>
 
-                <div class="projectImageContainer"
-                onmouseover="toggleProjectImageText(2)" onmouseout="toggleProjectImageText(2)" onclick="togglePythonProjectDescription(2)">
+                <div class="projectImageContainer" onmouseover="toggleProjectImageText(2)" onmouseout="toggleProjectImageText(2)" onclick="showPythonProjectDescription(2)">
                     <img src="sudoku.PNG" class="projectImage">
                     <div class="projectImageText">Sudoku Solver</div>
                 </div>
                 
-                <div class="projectImageContainer"
-                onmouseover="toggleProjectImageText(3)" onmouseout="toggleProjectImageText(3)" onclick="togglePythonProjectDescription(3)">
+                <div class="projectImageContainer" onmouseover="toggleProjectImageText(3)" onmouseout="toggleProjectImageText(3)" onclick="showPythonProjectDescription(3)">
                     <img src="uncrossing.PNG" class="projectImage">
                     <div class="projectImageText">Untangle</div>
                 </div>
                 
-                <div class="projectImageContainer"
-                onmouseover="toggleProjectImageText(4)" onmouseout="toggleProjectImageText(4)" onclick="togglePythonProjectDescription(4)">
+                <div class="projectImageContainer" onmouseover="toggleProjectImageText(4)" onmouseout="toggleProjectImageText(4)" onclick="showPythonProjectDescription(4)">
                     <img src="connect4.PNG" class="projectImage">
                     <div class="projectImageText">Connect4</div>
                 </div>
 
-                <div class="projectImageContainer"
-                onmouseover="toggleProjectImageText(5)" onmouseout="toggleProjectImageText(5)" onclick="togglePythonProjectDescription(5)">
+                <div class="projectImageContainer" onmouseover="toggleProjectImageText(5)" onmouseout="toggleProjectImageText(5)" onclick="showPythonProjectDescription(5)">
                     <img src="Cube.PNG" class="projectImage">
                     <div class="projectImageText">Cube</div>
                 </div>
 
-                <div class="projectImageContainer"
-                onmouseover="toggleProjectImageText(6)" onmouseout="toggleProjectImageText(6)" onclick="togglePythonProjectDescription(6)">
+                <div class="projectImageContainer" onmouseover="toggleProjectImageText(6)" onmouseout="toggleProjectImageText(6)" onclick="showPythonProjectDescription(6)">
                     <img src="Dominate.PNG" class="projectImage">
                     <div class="projectImageText">Domination</div>
                 </div>
 
-                <div class="projectImageContainer"
-                onmouseover="toggleProjectImageText(7)" onmouseout="toggleProjectImageText(7)" onclick="togglePythonProjectDescription(7)">
+                <div class="projectImageContainer" onmouseover="toggleProjectImageText(7)" onmouseout="toggleProjectImageText(7)" onclick="showPythonProjectDescription(7)">
                     <img src="LineOfSight.PNG" class="projectImage">
                     <div class="projectImageText">Line of Sight</div>
                 </div>
@@ -223,7 +214,7 @@
         <h1 id="wip" class="banner">Work in Progress</h1>
             <h3>To Do</h3>
             <ol>
-                <li>Finish python project descriptions, include a link to a working version of each project</li>
+                <li>Python projects are mostly finished. The functionality is there, but I need to finish all the links, images and descriptions</li>
             </ol>
             <h3>Wishlist</h3>
             <ol>
@@ -232,6 +223,7 @@
                 <li>Different displays for phones</li>
             </ol>
         <h1>Changelog (temp)</h1>
+            
             <h2>22-05-21</h2>
             <ul>
                 <li>Clicking a python project image now brings up a description</li>
@@ -277,9 +269,20 @@ var projectDescriptions = document.getElementsByClassName("pythonProjectDescript
 function toggleProjectImageText(x) {
     var text = projectImageTexts[x];
     toggleElementsDisplay(text);};
-function togglePythonProjectDescription(x) {
+
+function showPythonProjectDescription(x) {
+    var description
+    for (i = 0; i < projectDescriptions.length; i++) {
+        description = projectDescriptions[i]
+        if (i == x) {
+            showElementsDisplay(description);
+        } else {
+            hideElementsDisplay(description);
+        };
+    };};
+function hidePythonProjectDescription(x) {
     var description = projectDescriptions[x];
-    toggleElementsDisplay(description);};
+    hideElementsDisplay(description);};
 
 function toggleElementsDisplay(element) {
     if (element.style.display == "initial") {
