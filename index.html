@@ -94,7 +94,7 @@
 
     <!-- Navigation Menu -->
     <div id="menu">
-        <ul id="nav">
+        <ul id="nav" class="center">
             <li><a href="#aboutMe">About Me</a></li>
             <li><a href="#volunteering">Volunteering</a></li>
             <li><a href="#pythonProjects">Python Projects</a></li>
@@ -309,20 +309,24 @@ function hideElementsDisplay(element) {
 function windowResize() {
     var w = window.innerWidth;
 
-    if (w < 1000) {
+    if (w < 850) {
         document.getElementById("menuSide").id = "menuTop";
+        document.getElementsByClassName("content")[0].style.margin = "0px 0px 0px 0px";
+        document.getElementsByClassName("content")[0].style.padding = "50px 0px 0px 0px";
     } else {
         document.getElementById("menuTop").id = "menuSide";
+        document.getElementsByClassName("content")[0].style.margin = "0px 0px 0px 150px";
+        document.getElementsByClassName("content")[0].style.padding = "0px";
     };
     
 };
 
 var w = window.innerWidth
 menu = document.getElementById("menu")
-if (w < 1000) {
-    menu.id = "menuTop"
+if (w < 850) {
+    menu.id = "menuTop";
 } else {
-    menu.id = "menuSide"
+    menu.id = "menuSide";
 }
 
 
